@@ -1,0 +1,190 @@
+No datetime | INFO | Start app hanoitowers version: 0.0.1
+No datetime | INFO | App arguments: --discs 3 --stdoutlog --multiplelogfiles --nologdatetime
+No datetime | INFO | Create Player: Player 1. Class: Player
+No datetime | INFO | Get instance for solver: iterative
+No datetime | INFO | Create actor of type: ActorType.TOWER_1
+No datetime | INFO | Create actor of type: ActorType.TOWER_2
+No datetime | INFO | Create actor of type: ActorType.TOWER_3
+No datetime | INFO | Create actor of type: ActorType.DISC_3
+No datetime | INFO | Create actor of type: ActorType.DISC_2
+No datetime | INFO | Create actor of type: ActorType.DISC_1
+No datetime | INFO | Waiting input from player
+No datetime | INFO | Create actor of type: ActorType.CLOCK_TIMER_A
+No datetime | INFO | Create actor of type: ActorType.SELECTOR_A
+No datetime | INFO | Current game stats:
+Time                  -->	No datetime
+Full screen           -->	     False
+------                -->	    ------
+Games to play         -->	         0
+Turn max time in secs -->	        15
+-------               -->	    ------
+Current Game          -->	         1
+--------              -->	------------
+Completed without mistakes-->	         0
+Score Max             -->	         0
+---------             -->	-------------
+--------------------------------------------------------------
+No datetime | INFO | Player tries to move disc 1 from tower tower_start to tower tower_end
+No datetime | INFO |  1. Move disc 1 from tower_start to tower_end
+No datetime | INFO | Create actor of type: ActorType.CLOCK_TIMER_A
+No datetime | INFO | Discs positions:
+     Disc 3 is in tower 1
+     Disc 2 is in tower 1
+     Disc 1 is in tower 3
+No datetime | INFO | Player tries to move disc 2 from tower tower_start to tower tower_tmp
+No datetime | INFO |  2. Move disc 2 from tower_start to tower_tmp
+No datetime | INFO | Create actor of type: ActorType.CLOCK_TIMER_A
+No datetime | INFO | Discs positions:
+     Disc 3 is in tower 1
+     Disc 2 is in tower 2
+     Disc 1 is in tower 3
+No datetime | INFO | Player tries to move disc 1 from tower tower_end to tower tower_tmp
+No datetime | INFO |  3. Move disc 1 from tower_end to tower_tmp
+No datetime | INFO | Create actor of type: ActorType.CLOCK_TIMER_A
+No datetime | INFO | Discs positions:
+     Disc 3 is in tower 1
+     Disc 2 is in tower 2
+     Disc 1 is in tower 2
+No datetime | INFO | Player tries to move disc 3 from tower tower_start to tower tower_end
+No datetime | INFO |  4. Move disc 3 from tower_start to tower_end
+No datetime | INFO | Create actor of type: ActorType.CLOCK_TIMER_A
+No datetime | INFO | Discs positions:
+     Disc 3 is in tower 3
+     Disc 2 is in tower 2
+     Disc 1 is in tower 2
+No datetime | INFO | Player tries to move disc 1 from tower tower_tmp to tower tower_start
+No datetime | INFO |  5. Move disc 1 from tower_tmp to tower_start
+No datetime | INFO | Create actor of type: ActorType.CLOCK_TIMER_A
+No datetime | INFO | Discs positions:
+     Disc 3 is in tower 3
+     Disc 2 is in tower 2
+     Disc 1 is in tower 1
+No datetime | INFO | Player tries to move disc 2 from tower tower_tmp to tower tower_end
+No datetime | INFO |  6. Move disc 2 from tower_tmp to tower_end
+No datetime | INFO | Create actor of type: ActorType.CLOCK_TIMER_A
+No datetime | INFO | Discs positions:
+     Disc 3 is in tower 3
+     Disc 2 is in tower 3
+     Disc 1 is in tower 1
+No datetime | INFO | Player tries to move disc 1 from tower tower_start to tower tower_end
+No datetime | INFO |  7. Move disc 1 from tower_start to tower_end
+No datetime | INFO | Create actor of type: ActorType.CLOCK_TIMER_A
+No datetime | INFO | Discs positions:
+     Disc 3 is in tower 3
+     Disc 2 is in tower 3
+     Disc 1 is in tower 3
+No datetime | INFO | Current game stats:
+Time                  -->	No datetime
+Full screen           -->	     False
+------                -->	    ------
+Games to play         -->	         0
+Turn max time in secs -->	        15
+-------               -->	    ------
+Current Game          -->	         1
+--------              -->	------------
+Completed without mistakes-->	         1
+Score Max             -->	         0
+---------             -->	-------------
+--------------------------------------------------------------
+No datetime | INFO | Get instance for solver: iterative
+No datetime | INFO | Create actor of type: ActorType.TOWER_1
+No datetime | INFO | Create actor of type: ActorType.TOWER_2
+No datetime | INFO | Create actor of type: ActorType.TOWER_3
+No datetime | INFO | Create actor of type: ActorType.DISC_3
+No datetime | INFO | Create actor of type: ActorType.DISC_2
+No datetime | INFO | Create actor of type: ActorType.DISC_1
+No datetime | INFO | Waiting input from player
+No datetime | INFO | Create actor of type: ActorType.CLOCK_TIMER_A
+No datetime | INFO | Create actor of type: ActorType.SELECTOR_A
+No datetime | INFO | Current game stats:
+Time                  -->	No datetime
+Full screen           -->	     False
+------                -->	    ------
+Games to play         -->	         0
+Turn max time in secs -->	        15
+-------               -->	    ------
+Current Game          -->	         2
+--------              -->	------------
+Completed without mistakes-->	         1
+Score Max             -->	        35
+---------             -->	-------------
+--------------------------------------------------------------
+No datetime | INFO |  1. Move disc 1 from tower_start to tower_end
+No datetime | INFO | Discs positions:
+     Disc 3 is in tower 1
+     Disc 2 is in tower 1
+     Disc 1 is in tower 3
+No datetime | INFO | Create actor of type: ActorType.CLOCK_TIMER_A
+No datetime | INFO |  2. Move disc 2 from tower_start to tower_tmp
+No datetime | INFO | Discs positions:
+     Disc 3 is in tower 1
+     Disc 2 is in tower 2
+     Disc 1 is in tower 3
+No datetime | INFO | Create actor of type: ActorType.CLOCK_TIMER_A
+No datetime | INFO |  3. Move disc 1 from tower_end to tower_tmp
+No datetime | INFO | Discs positions:
+     Disc 3 is in tower 1
+     Disc 2 is in tower 2
+     Disc 1 is in tower 2
+No datetime | INFO | Create actor of type: ActorType.CLOCK_TIMER_A
+No datetime | INFO |  4. Move disc 3 from tower_start to tower_end
+No datetime | INFO | Discs positions:
+     Disc 3 is in tower 3
+     Disc 2 is in tower 2
+     Disc 1 is in tower 2
+No datetime | INFO | Create actor of type: ActorType.CLOCK_TIMER_A
+No datetime | INFO |  5. Move disc 1 from tower_tmp to tower_start
+No datetime | INFO | Discs positions:
+     Disc 3 is in tower 3
+     Disc 2 is in tower 2
+     Disc 1 is in tower 1
+No datetime | INFO | Create actor of type: ActorType.CLOCK_TIMER_A
+No datetime | INFO |  6. Move disc 2 from tower_tmp to tower_end
+No datetime | INFO | Discs positions:
+     Disc 3 is in tower 3
+     Disc 2 is in tower 3
+     Disc 1 is in tower 1
+No datetime | INFO | Create actor of type: ActorType.CLOCK_TIMER_A
+No datetime | INFO |  7. Move disc 1 from tower_start to tower_end
+No datetime | INFO | Discs positions:
+     Disc 3 is in tower 3
+     Disc 2 is in tower 3
+     Disc 1 is in tower 3
+No datetime | INFO | Create actor of type: ActorType.CLOCK_TIMER_A
+No datetime | INFO | Current game stats:
+Time                  -->	No datetime
+Full screen           -->	     False
+------                -->	    ------
+Games to play         -->	         0
+Turn max time in secs -->	        15
+-------               -->	    ------
+Current Game          -->	         2
+--------              -->	------------
+Completed without mistakes-->	         1
+Score Max             -->	        35
+---------             -->	-------------
+--------------------------------------------------------------
+No datetime | INFO | Get instance for solver: iterative
+No datetime | INFO | Create actor of type: ActorType.TOWER_1
+No datetime | INFO | Create actor of type: ActorType.TOWER_2
+No datetime | INFO | Create actor of type: ActorType.TOWER_3
+No datetime | INFO | Create actor of type: ActorType.DISC_3
+No datetime | INFO | Create actor of type: ActorType.DISC_2
+No datetime | INFO | Create actor of type: ActorType.DISC_1
+No datetime | INFO | Waiting input from player
+No datetime | INFO | Create actor of type: ActorType.CLOCK_TIMER_A
+No datetime | INFO | Create actor of type: ActorType.SELECTOR_A
+No datetime | INFO | Current game stats:
+Time                  -->	No datetime
+Full screen           -->	     False
+------                -->	    ------
+Games to play         -->	         0
+Turn max time in secs -->	        15
+-------               -->	    ------
+Current Game          -->	         3
+--------              -->	------------
+Completed without mistakes-->	         1
+Score Max             -->	        35
+---------             -->	-------------
+--------------------------------------------------------------
+No datetime | INFO | End app hanoitowers

@@ -69,8 +69,8 @@ class HanoiTowers:
     def __str__(self):
         return f"HanoiTowers for n_discs: {self.n_discs}\n" \
                f"\ttower_start: {self.tower_start}\n" \
-               f"\ttower_tmp: {self.tower_tmp}\n" \
-               f"\ttower_end: {self.tower_end}"
+               f"\ttower_tmp: {self.tower_tmp if self.n_discs % 2 != 0 else self.tower_end}\n" \
+               f"\ttower_end: {self.tower_end if self.n_discs % 2 != 0 else self.tower_tmp}"
 
     def move_disc_between_towers(self, tower1, tower2, to_log=False):
         no_disc_value = 0

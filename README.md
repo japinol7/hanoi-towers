@@ -12,8 +12,6 @@
 	author_twitter: @japinol
 	requirements: pygame or pygame-ce
 	Python requires: 3.11 or greater.
-	Python versions tested: 
-        > 3.11.4 64bits under Windows 11 and pygame-ce 2.3.1
 
 
 ## Rules and user guide
@@ -37,7 +35,6 @@ Enjoy the game     ; )
        ESC:   exit game
        ^m:    pause/resume music
        ^s:    sound effects on/off
-       L_Alt + Enter: change full screen / windowed screen mode
        ^h:    shows this help to the console
 
     > Additional keys for debug mode:

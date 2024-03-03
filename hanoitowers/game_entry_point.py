@@ -134,10 +134,7 @@ class Game:
         Game.size = [Settings.screen_width, Settings.screen_height]
         Game.full_screen_flags = pg.FULLSCREEN | pg.DOUBLEBUF | pg.HWSURFACE | pg.SCALED
         Game.normal_screen_flags = pg.DOUBLEBUF | pg.HWSURFACE
-        if Settings.is_full_screen:
-            Game.screen_flags = Game.full_screen_flags
-        else:
-            Game.screen_flags = Game.normal_screen_flags
+        Game.screen_flags = Game.full_screen_flags if Settings.is_full_screen else Game.normal_screen_flags
         Game.screen = pg.display.set_mode(Game.size, Game.screen_flags)
 
         # Load and render resources
@@ -343,9 +340,6 @@ class Game:
                     elif event.key == pg.K_F1:
                         if not self.is_exit_curr_game_confirm:
                             self.is_help_screen = not self.is_help_screen
-                    elif event.key in (pg.K_KP_ENTER, pg.K_RETURN) and not self.auto:
-                        if pg.key.get_mods() & pg.KMOD_LALT:
-                            self.is_full_screen_switch = True
                 elif event.type == pg.KEYUP:
                     if event.key == pg.K_n:
                         self.next_movement_auto()

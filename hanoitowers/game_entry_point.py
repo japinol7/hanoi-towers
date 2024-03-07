@@ -340,10 +340,6 @@ class Game:
                     elif event.key == pg.K_F1:
                         if not self.is_exit_curr_game_confirm:
                             self.is_help_screen = not self.is_help_screen
-                    elif event.key in (pg.K_KP_ENTER, pg.K_RETURN) and not self.auto:
-                        if pg.key.get_mods() & pg.KMOD_LALT:
-                            if Settings.is_full_screen_feature_activated:
-                                self.is_full_screen_switch = True
                 elif event.type == pg.KEYUP:
                     if event.key == pg.K_n:
                         self.next_movement_auto()

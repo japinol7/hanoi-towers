@@ -48,6 +48,11 @@ def main():
     parser.add_argument('-u', '--turnmaxsecs', default=TURN_MAX_TIME_SECS,
                         help=f"Turn max seconds before the player loses some score points. "
                              f"Must be between {TURN_MAX_TIME_SECS_MIN} and {TURN_MAX_TIME_SECS_MAX}")
+    parser.add_argument('-uu', '--nodisplayscaled', default=False, action='store_true',
+                        help='Remove the scaling of the game screen. '
+                             'Resolution depends on desktop size and scale graphics. '
+                             'Note that Pygame scaled is considered an experimental API '
+                             'and is subject to change.')
     parser.add_argument('-d', '--debug', default=None, action='store_true',
                         help='Debug actions when pressing the right key, information and traces')
     parser.add_argument('-t', '--debugtraces', default=None, action='store_true',
@@ -84,7 +89,8 @@ def main():
             game = Game(is_debug=args.debug, games_to_play=games_to_play,
                         turn_max_secs=turn_max_secs, auto=auto, semi_auto=semi_auto,
                         no_log_datetime=args.nologdatetime, stdout_log=args.stdoutlog,
-                        hanoy_discs=hanoy_discs, solver=solver)
+                        hanoy_discs=hanoy_discs, solver=solver,
+                        is_no_display_scaled=args.nodisplayscaled)
             Game.stats_gen.update({'games_played': Game.current_game})
             game.is_music_paused = is_music_paused
             screen_start_game = screen.StartGame(game)

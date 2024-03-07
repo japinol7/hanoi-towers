@@ -60,7 +60,8 @@ class Game:
 
     def __init__(self, is_debug=None, games_to_play=None, turn_max_secs=None,
                  speed_pct=None, auto=None, semi_auto=None, no_log_datetime=None,
-                 stdout_log=None, hanoy_discs=None, solver=None):
+                 stdout_log=None, hanoy_discs=None, solver=None,
+                 is_no_display_scaled=None):
         self.name = "The Towers of Hanoi v 0.01"
         self.name_short = "The Towers of Hanoi"
         self.name_long = "The Towers of Hanoi"
@@ -107,8 +108,10 @@ class Game:
         self.mouse_pos = (0, 0)
 
         if not Game.current_game:
-            self._first_game_setup(no_log_datetime, stdout_log, games_to_play,
-                                   turn_max_secs, speed_pct, hanoy_discs, solver)
+            self._first_game_setup(
+                no_log_datetime, stdout_log, games_to_play,
+                turn_max_secs, speed_pct, hanoy_discs,
+                solver, is_no_display_scaled)
         else:
             self.player = Player.players[0]
         self.hanoi_towers = hanoi_towers.get_hanoi_towers_instance(self.disc_locations)
@@ -116,7 +119,8 @@ class Game:
         self._screens_setup()
 
     def _first_game_setup(self, no_log_datetime, stdout_log, games_to_play,
-                          turn_max_secs, speed_pct, hanoy_discs, solver):
+                          turn_max_secs, speed_pct, hanoy_discs,
+                          solver, is_no_display_scaled=None):
         Game.is_first_game = True
         Game.no_log_datetime = no_log_datetime
         Game.stdout_log = stdout_log
@@ -132,8 +136,8 @@ class Game:
 
         # Set screen to the settings configuration
         Game.size = [Settings.screen_width, Settings.screen_height]
-        Game.full_screen_flags = pg.FULLSCREEN | pg.DOUBLEBUF | pg.HWSURFACE | pg.SCALED
-        Game.normal_screen_flags = pg.DOUBLEBUF | pg.HWSURFACE
+        Game.full_screen_flags = pg.FULLSCREEN if is_no_display_scaled else pg.FULLSCREEN | pg.SCALED
+        Game.normal_screen_flags = pg.SHOWN if is_no_display_scaled else pg.SHOWN | pg.SCALED
         Game.screen_flags = Game.full_screen_flags if Settings.is_full_screen else Game.normal_screen_flags
         Game.screen = pg.display.set_mode(Game.size, Game.screen_flags)
 
@@ -340,6 +344,9 @@ class Game:
                     elif event.key == pg.K_F1:
                         if not self.is_exit_curr_game_confirm:
                             self.is_help_screen = not self.is_help_screen
+                    elif event.key in (pg.K_KP_ENTER, pg.K_RETURN) and not self.auto:
+                        if pg.key.get_mods() & pg.KMOD_LALT:
+                            self.is_full_screen_switch = True
                 elif event.type == pg.KEYUP:
                     if event.key == pg.K_n:
                         self.next_movement_auto()

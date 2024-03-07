@@ -35,6 +35,7 @@ Enjoy the game     ; )
        ESC:   exit game
        ^m:    pause/resume music
        ^s:    sound effects on/off
+       L_Alt + Enter: change full screen / windowed screen mode
        ^h:    shows this help to the console
 
     > Additional keys for debug mode:
@@ -49,7 +50,7 @@ Enjoy the game     ; )
 
 ## Usage
 
-	usage: hanoitowers [-h] [-a] [-g GAMESTOPLAY] [-i DISCS] [-l] [-m] [-n] [-s] [-u TURNMAXSECS] [-d] [-t]
+	usage: hanoitowers [-h] [-a] [-g GAMESTOPLAY] [-i DISCS] [-l] [-m] [-n] [-s] [-u TURNMAXSECS] [-uu] [-d] [-t]
 	
 	optional arguments:
 	  -h, --help            show this help message and exit.
@@ -70,6 +71,11 @@ Enjoy the game     ; )
 	  -u, --turnmaxsecs TURNMAXSECS
 	                        Turn max seconds before the player loses 5 score points.
 	                        Must be between 5 and 900.
+	  -uu, --nodisplayscaled
+	                        Deactivate the scaling of the game screen. 
+	                        Resolution depends on desktop size and scale graphics. 
+	                        Note that Pygame scaled is considered an experimental API 
+	                        and is subject to change.
 	  -d, --debug
 	                        Debug actions when pressing the right key, information and traces.
 	  -t, --debugtraces
@@ -86,6 +92,7 @@ Enjoy the game     ; )
 	multiplelogfiles    False
 	stdoutlog           False
 	nologdatetime       False
+	nodisplayscaled     False
     debug               False
 	debugtraces         False
 

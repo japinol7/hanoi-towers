@@ -5,13 +5,13 @@
 
 	program: The Towers of Hanoi.
     name as a package: hanoitowers 
-	version: 0.0.2
+	version: 0.0.3
 	author: Joan A. Pinol
 	author_nickname: japinol
 	author_gitHub: japinol7
 	author_twitter: @japinol
 	requirements: pygame or pygame-ce
-	Python requires: 3.12 or greater.
+	Python requires: 3.13 or greater.
 
 
 ## Rules and user guide

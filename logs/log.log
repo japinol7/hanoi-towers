@@ -1,4 +1,4 @@
-No datetime | INFO | Start app hanoitowers version: 0.0.2
+No datetime | INFO | Start app hanoitowers version: 0.0.3
 No datetime | INFO | App arguments: --discs 3 --stdoutlog --multiplelogfiles --nologdatetime
 No datetime | INFO | Create Player: Player 1. Class: Player
 No datetime | INFO | Get instance for solver: iterative

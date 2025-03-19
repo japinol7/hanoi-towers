@@ -354,7 +354,8 @@ class Game:
                         self.is_completed_without_help = False
                     elif event.key == pg.K_F5:
                         self.show_fps = not self.show_fps
-                elif event.type == pg.MOUSEBUTTONDOWN:
+                elif event.type == pg.MOUSEBUTTONDOWN \
+                     and pg.mouse.get_pressed(num_buttons=3)[0]:
                     self.mouse_pos = pg.mouse.get_pos()
                     self.handle_sprite_selector()
 
